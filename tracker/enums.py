@@ -23,7 +23,7 @@ class Analysis(Enum):
     current_progress = "get the current progress info for a habit"
     current_streak = "get the current streak info for a habit"
     past_progress= "get a list of progress updates for a habit"
-    past_streaks = "gets a list of past streaks and breaks for a habit"
+    past_streaks = "get a list of past streaks and breaks for a habit"
     max_streak = "get the longest streak"
     max_break = "get the longest break"
     completion_rate = "get completion rates for a given timeframe"
