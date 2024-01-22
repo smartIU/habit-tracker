@@ -1,6 +1,6 @@
 # Habit Progress Tracker
 
-A habit progress tracker backend + simple CLI for a university assignment.
+A habit progress tracker for a university assignment.
 
 ## Features
 
@@ -27,12 +27,12 @@ sudo pacman -S wget git python3
 
 ## Usage
 
-'''shell
+'''commandline
 python tracker.py
 '''
 
 ## Test
 
-''' shell
+'''commandline
 python -m pytest -v
 '''
