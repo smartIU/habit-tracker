@@ -4,9 +4,9 @@ A habit progress tracker for a university assignment.
 
 ## Features
 
--
--
--
+- sqlite3 database
+- simple cli
+- analytics
 
 ## Installation
 
@@ -27,12 +27,12 @@ sudo pacman -S wget git python3
 
 ## Usage
 
-'''commandline
-python tracker.py
-'''
+```commandline
+tracker.py
+```
 
 ## Test
 
-'''commandline
+```commandline
 python -m pytest -v
-'''
+```
