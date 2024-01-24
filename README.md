@@ -1,6 +1,8 @@
 # Habit Progress Tracker
 
 A habit progress tracker for a university assignment.
+Code complete.
+Documentation still to be finished.
 
 ## Features
 
