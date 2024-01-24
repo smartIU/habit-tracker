@@ -247,7 +247,7 @@ def interactive_session(db : DB):
                 args.habit = get_habit_selection(db, "Which habit do you want to analyze?")
 
             if analysis == Analysis.past_progress or analysis == Analysis.completion_rate:                
-                timeframe = get_choice_from("Which timeframe do you want to analyze"
+                timeframe = get_choice_from("Which timeframe do you want to analyze?"
                                           , [Parameter.no_filter, Parameter.current_week, Parameter.last_week, Parameter.current_month, Parameter.last_month])
 
                 if timeframe == Parameter.current_week:
