@@ -76,17 +76,17 @@ class DB:
                                 (
                                     -- generate list of all necessary periods
 	                                SELECT    [period]
-			                                , 1 AS nr
-			                                , [start_date]
-			                                , CASE WHEN [period] = 30 THEN date([start_date], '+1 month')
-							                       ELSE date([start_date], ([period] || ' day')) END AS end_date					                  
+			                        , 1 AS nr
+			                        , [start_date]
+			                        , CASE WHEN [period] = 30 THEN date([start_date], '+1 month')
+						       ELSE date([start_date], ([period] || ' day')) END AS end_date					                  
 	                                FROM StartDates
 	                                UNION ALL
 	                                SELECT    [period]		
-			                                , [nr] + 1
-                                            , [end_date]
-			                                , CASE WHEN [period] = 30 THEN date([end_date], '+1 month')
-					                               ELSE date([end_date], ([period] || ' day')) END			                         
+			                        , [nr] + 1
+                                            	, [end_date]
+			                        , CASE WHEN [period] = 30 THEN date([end_date], '+1 month')
+					               ELSE date([end_date], ([period] || ' day')) END			                         
 	                                FROM     AlignedPeriods
 	                                WHERE    [end_date] <= date('now', 'localtime')
                                 )
