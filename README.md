@@ -5,11 +5,12 @@ A simple console application to define your personal habits and track their comp
 
 ## Features
 
-- Create habits that can be simply checked off or that need to accumulate progress over time
-  - when creating your habits, this is reflected by the "goal", choose "1" or leave this property empty for a task to check-off
+- Create habits that can be checked off instantly or that need to accumulate progress over time
+  - When creating your habits this is reflected by the "amount of progress to complete the task",
+    choose "1" or leave this property empty for a check-off task
 - Supports daily, weekly and monthly tasks as well as freely defined periods spanning any number of days
-  - note that weekly periods always start on Mondays and monthly periods on the 1st of the month
-  - whereas freely defined periods start on the day you create the respective habit
+  - Note that weekly periods always start on Mondays and monthly periods on the 1st of the month,
+    whereas freely defined periods start on the day you create the respective habit
 - A Lightweight SQLite database file to store your habits is created automatically upon start
 
 
@@ -89,11 +90,45 @@ You can conduct a variety of analyses with different filter options.
 ![completion rate](https://github.com/smartIU/habit-tracker/assets/156700437/314b9496-2dd8-4d51-bf59-8269aa8e5985)
 
 When conducting an analysis for a specific timeframe, note that habits with a period greater than the timeframe will not be included.
-For example, when analysing only the last week, monthly habits will not be featured in the result.
+For example, when analysing the last week, monthly habits will not be featured in the result.
+
+### Command line requests
+
+Every action from the interactive mode is also available directly via command line. Start the script or .exe with "-h" as an argument to get help for each individual command.
+
+```commandline
+tracker.py -h
+```
+
+![help](https://github.com/smartIU/habit-tracker/assets/156700437/b9c53f20-22dc-423b-8da3-f7467f4d7f87)
+
+You can get the results in the same format as in interactive mode, for example, when querying the longest streak of all weekly habits:
+
+![max_streak](https://github.com/smartIU/habit-tracker/assets/156700437/ba30933e-5268-4452-a3f0-93c5bea62550)
+
+Or you can append "--json" to get results as a .json object suitable for further processing, for example, if you intend to use the app as a backend for your own GUI:
+
+![json](https://github.com/smartIU/habit-tracker/assets/156700437/8cd11983-72f2-4f2e-9bd3-db093b95732a)
 
 
 ## Test
 
+There are 100 unit tests defined to validate every action you can perform with the app. Only parsing of the user input / creating and navigating through the interactive menu is not covered.
+
+To run the tests by yourself, you have to first install pytest. You can use pip to achieve this:
+
+```commandline
+pip install pytest
+```
+
+Then navigate to the root of the app directory (i.e., where "tracker.py" is located) and run the following command:
+
 ```commandline
 python -m pytest -v
 ```
+
+Note that simply running "pytest ." without "python -m" will not work, because the test_tracker.py file is located in a subdirectory.
+
+To output of the test should then look like this:
+
+![pytest](https://github.com/smartIU/habit-tracker/assets/156700437/483fe94b-4f26-4e25-944e-e92b75d8cab2)
