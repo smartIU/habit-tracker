@@ -14,10 +14,16 @@ Documentation still to be finished.
 
 ### Windows
 
-1. Install [Python 3.10.6](https://www.python.org/downloads/windows/), checking "Add Python to PATH"
+Install Python version 3.10 or newer from [Python Download](https://www.python.org/downloads/windows/), checking "Add Python to PATH"
+
+or use the precompiled [release](https://github.com/smartIU/habit-tracker/releases/tag/v1.0) of the app for Windows x64
 
 ### Linux
-1. Install Python:
+
+Install Python manually from [Python Download](https://www.python.org/downloads/source/)
+
+or use git:
+
 ```bash
 # Debian-based:
 sudo apt install wget git python3 python3-venv
@@ -26,6 +32,18 @@ sudo dnf install wget git python3
 # Arch-based:
 sudo pacman -S wget git python3
 ```
+
+### macOS
+
+Install Python from [Python Download](https://www.python.org/downloads/macos/) and follow the instructions on [How to run a python script](https://docs.python.org/3/using/mac.html):
+
+To run the habit tracker from the Terminal window you must make sure that /usr/local/bin is in your shell search path.
+
+To run the habit tracker from the Finder you have two options:
+
+  Drag it to PythonLauncher
+
+  Select PythonLauncher as the default application to open tracker.py (or any .py script) through the finder Info window and double-click it.
 
 ## Usage
 
