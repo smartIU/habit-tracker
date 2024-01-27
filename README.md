@@ -71,7 +71,7 @@ tracker.exe
 
 ![start_empty](https://github.com/smartIU/habit-tracker/assets/156700437/7e917867-74bc-466e-accc-25a680da3936)
 
-When you start the application for the first time, you have the option to either create your first own habit or insert a set of predefined habits.
+When you start the application for the first time, you have the option to either create your own habit or insert a set of predefined habits.
 
 ### Interactive mode
 
@@ -106,9 +106,11 @@ You can get the results in the same format as in interactive mode, for example, 
 
 ![max_streak](https://github.com/smartIU/habit-tracker/assets/156700437/ba30933e-5268-4452-a3f0-93c5bea62550)
 
-Or you can append "--json" to get results as a .json object suitable for further processing, for example, if you intend to use the app as a backend for your own GUI:
+Or you can append "--json" to get results as a json object suitable for further processing, for example, if you intend to use the app as a backend for your own GUI:
 
 ![json](https://github.com/smartIU/habit-tracker/assets/156700437/8cd11983-72f2-4f2e-9bd3-db093b95732a)
+
+For a full list of all available command line requests as well as examples on how to answer common questions like "With which habits did I struggle most last month?", please refer to the [Wiki](https://github.com/smartIU/habit-tracker/wiki).
 
 
 ## Test
