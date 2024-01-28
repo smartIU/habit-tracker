@@ -6,7 +6,7 @@ A simple console application to define your personal habits and track their comp
 ## Features
 
 - Create habits that can be checked off instantly or that need to accumulate progress over time
-  - When creating your habits this is reflected by the "amount of progress to complete the task",
+  - When creating your habits this is reflected by the "amount of progress required to complete the task",
     choose "1" or leave this property empty for a check-off task
 - Supports daily, weekly and monthly tasks as well as freely defined periods spanning any number of days
   - Note that weekly periods always start on Mondays and monthly periods on the 1st of the month,
@@ -131,6 +131,11 @@ python -m pytest -v
 
 Note that simply running "pytest ." without "python -m" will not work, because the test_tracker.py file is located in a subdirectory.
 
-To output of the test should then look like this:
+The output of the test should then look like this:
 
 ![pytest](https://github.com/smartIU/habit-tracker/assets/156700437/483fe94b-4f26-4e25-944e-e92b75d8cab2)
+
+
+### Disclaimer
+
+**No** part of the app or its documentation was created by or with the help of artificial intelligence.
